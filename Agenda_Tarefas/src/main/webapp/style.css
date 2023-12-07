@@ -1,0 +1,113 @@
+/* Reset de estilos padrão */
+*{
+font-family: 'Tsukushi Old Mincho';src: url('caminho/para/tsukushioldmincho.woff') format('woff'); /* Substitua pelo caminho real da sua fonte */
+font-weight: normal;
+  font-style: normal;
+  	font-weight: bold;
+
+}
+body, h1, h2, h3, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+body {
+	color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #f2f2f2;
+    background-image: url('https://images5.alphacoders.com/609/609173.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+
+
+h1 {
+	
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+#conteudo {
+	background-image: url('https://i.ibb.co/6mKjHjZ/MENU-Base-U.png');
+    width: 80%;
+    
+    margin: 20px auto;    
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(128, 128, 128, 0.5);
+     
+}
+
+#loading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo do formulário */
+#formulario {
+    margin-top: 20px;
+}
+
+label {
+    width: 150px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    box-sizing: border-box;
+}
+
+input[type="button"] {
+	background-image: url('https://i.ibb.co/PQ7LCGp/MENU-Item-Parts.png');
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+input[type="button"]:hover {
+    background-color: darkorange;
+}
+
+/* Estilo da tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-image: url('https://i.ibb.co/RTGTRrs/MENU-Item-Box-Base.png');
+    color: #fff;
+}
+
+/* Botões na tabela */
+#dados td:last-child {
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #conteudo {
+        width: 90%;
+    }
+}

@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Agenda</title>
+        <meta charset="utf-8"/>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <style>
+            label {
+                width: 200px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>AGENDA OF SOULS</h1>
+        <div id="loading" style="display: none;">
+		</div>
+		
+		<div id="conteudo">
+        <input type="button" value="NOVO" onclick="novo()"/>
+        <div id="formulario" style="display: none;">
+            <label>
+                TAREFA: <input type="text" id="tarefa"/>
+            </label><br/>
+            <label>
+               DESCRICAO: <input type="text" id="descricao"/>
+            </label><br/>
+            <label>
+                DATA: <input type="text" id="data_tarefa"/>
+            </label><br/>
+            <label>
+               STATUS: <input type="text" id="status_tarefa"/>
+            </label><br/>
+            <label>
+                TIME RESPONSAVEL:<input type="text" id="squad_tarefa"/>
+            </label><br/>
+            <input type="button" value="SALVAR" onclick="salvar()"/>
+            <input type="button" value="CANCELAR" onclick="cancelar()"/>
+        </div>
+        <div id="lista">
+            <table border="1" width="100%">
+                <thead>
+                    <th>ID</th>
+                    <th>TAREFA</th>
+                    <th>DESCRIÇÃO</th>
+                    <th>DATA</th>
+                    <th>STATUS</th>
+                    <th>TIME RESPONSAVEL</th>
+                    <th></th>
+                    <th></th>
+
+                </thead>
+                <tbody id="dados">
+
+                </tbody>
+            </table>
+       	 	</div>
+       	 </div>
+        
+        <script src="crud_2.js"></script>
+    </body>
+
+</html>
